@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 
 //Styling
 import styles from "./AddUserForm.module.css";
@@ -79,7 +79,7 @@ const AddUserForm = (props) => {
   };
 
   return (
-    <div>
+    <>
       {isValid ? (
         <form>
           <div className={styles.section}>
@@ -109,7 +109,7 @@ const AddUserForm = (props) => {
       ) : (
         <ErrorMessage message={errorMessage} onProcceed={onProcceedHandler} />
       )}
-    </div>
+    </>
   );
 };
 
