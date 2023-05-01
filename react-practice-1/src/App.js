@@ -19,8 +19,6 @@ function App() {
     setUsers([...updatedUsers]);
   };
 
-  console.log(users);
-
   return (
     <div className={styles.App}>
       <AddUser onUserAdd={getNewUser} />

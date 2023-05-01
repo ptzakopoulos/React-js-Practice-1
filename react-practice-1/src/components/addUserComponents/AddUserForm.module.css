@@ -39,3 +39,7 @@ button:hover {
 button:active {
   background-color: rgb(126, 1, 78);
 }
+
+.invalid {
+  position: relative;
+}
